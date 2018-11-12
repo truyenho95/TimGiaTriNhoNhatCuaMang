@@ -13,12 +13,12 @@ function minArray(arr) {
   if(arr.length == 0)
       return -1;
 
-  var min = arr[0];
+  var min = parseInt(arr[0]);
 
 
   for(var i = 1; i < arr.length; i++){
-    if(arr[i] < min){
-      min = arr[i];
+    if(parseInt(arr[i]) < min){
+      min = parseInt(arr[i]);
     }
   }
   return min;
